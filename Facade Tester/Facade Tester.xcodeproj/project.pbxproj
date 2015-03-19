@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E2006761ABABDB600A3748E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2006751ABABDB600A3748E /* main.m */; };
+		1E2006791ABABDB600A3748E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2006781ABABDB600A3748E /* AppDelegate.m */; };
+		1E20067C1ABABDB600A3748E /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20067B1ABABDB600A3748E /* WeatherViewController.m */; };
+		1E20067F1ABABDB600A3748E /* StockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20067E1ABABDB600A3748E /* StockViewController.m */; };
+		1E2006841ABABDB600A3748E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2006831ABABDB600A3748E /* Images.xcassets */; };
+		1E2006871ABABDB600A3748E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2006851ABABDB600A3748E /* LaunchScreen.xib */; };
+		1E2006931ABABDB600A3748E /* Facade_TesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2006921ABABDB600A3748E /* Facade_TesterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E20068D1ABABDB600A3748E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E2006681ABABDB500A3748E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E20066F1ABABDB600A3748E;
+			remoteInfo = "Facade Tester";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E2006701ABABDB600A3748E /* Facade Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facade Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2006741ABABDB600A3748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2006751ABABDB600A3748E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E2006771ABABDB600A3748E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1E2006781ABABDB600A3748E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1E20067A1ABABDB600A3748E /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		1E20067B1ABABDB600A3748E /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		1E20067D1ABABDB600A3748E /* StockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockViewController.h; sourceTree = "<group>"; };
+		1E20067E1ABABDB600A3748E /* StockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockViewController.m; sourceTree = "<group>"; };
+		1E2006831ABABDB600A3748E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E2006861ABABDB600A3748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1E20068C1ABABDB600A3748E /* Facade TesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Facade TesterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2006911ABABDB600A3748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2006921ABABDB600A3748E /* Facade_TesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade_TesterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E20066D1ABABDB600A3748E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2006891ABABDB600A3748E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E2006671ABABDB500A3748E = {
+			isa = PBXGroup;
+			children = (
+				1E2006721ABABDB600A3748E /* Facade Tester */,
+				1E20068F1ABABDB600A3748E /* Facade TesterTests */,
+				1E2006711ABABDB600A3748E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E2006711ABABDB600A3748E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E2006701ABABDB600A3748E /* Facade Tester.app */,
+				1E20068C1ABABDB600A3748E /* Facade TesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E2006721ABABDB600A3748E /* Facade Tester */ = {
+			isa = PBXGroup;
+			children = (
+				1E2006771ABABDB600A3748E /* AppDelegate.h */,
+				1E2006781ABABDB600A3748E /* AppDelegate.m */,
+				1E20067A1ABABDB600A3748E /* WeatherViewController.h */,
+				1E20067B1ABABDB600A3748E /* WeatherViewController.m */,
+				1E20067D1ABABDB600A3748E /* StockViewController.h */,
+				1E20067E1ABABDB600A3748E /* StockViewController.m */,
+				1E2006831ABABDB600A3748E /* Images.xcassets */,
+				1E2006851ABABDB600A3748E /* LaunchScreen.xib */,
+				1E2006731ABABDB600A3748E /* Supporting Files */,
+			);
+			path = "Facade Tester";
+			sourceTree = "<group>";
+		};
+		1E2006731ABABDB600A3748E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E2006741ABABDB600A3748E /* Info.plist */,
+				1E2006751ABABDB600A3748E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E20068F1ABABDB600A3748E /* Facade TesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E2006921ABABDB600A3748E /* Facade_TesterTests.m */,
+				1E2006901ABABDB600A3748E /* Supporting Files */,
+			);
+			path = "Facade TesterTests";
+			sourceTree = "<group>";
+		};
+		1E2006901ABABDB600A3748E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E2006911ABABDB600A3748E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E20066F1ABABDB600A3748E /* Facade Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2006961ABABDB600A3748E /* Build configuration list for PBXNativeTarget "Facade Tester" */;
+			buildPhases = (
+				1E20066C1ABABDB600A3748E /* Sources */,
+				1E20066D1ABABDB600A3748E /* Frameworks */,
+				1E20066E1ABABDB600A3748E /* Resources */,
+				1E20069C1ABABDE400A3748E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Facade Tester";
+			productName = "Facade Tester";
+			productReference = 1E2006701ABABDB600A3748E /* Facade Tester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E20068B1ABABDB600A3748E /* Facade TesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2006991ABABDB600A3748E /* Build configuration list for PBXNativeTarget "Facade TesterTests" */;
+			buildPhases = (
+				1E2006881ABABDB600A3748E /* Sources */,
+				1E2006891ABABDB600A3748E /* Frameworks */,
+				1E20068A1ABABDB600A3748E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E20068E1ABABDB600A3748E /* PBXTargetDependency */,
+			);
+			name = "Facade TesterTests";
+			productName = "Facade TesterTests";
+			productReference = 1E20068C1ABABDB600A3748E /* Facade TesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E2006681ABABDB500A3748E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = GWrabbit;
+				TargetAttributes = {
+					1E20066F1ABABDB600A3748E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1E20068B1ABABDB600A3748E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1E20066F1ABABDB600A3748E;
+					};
+				};
+			};
+			buildConfigurationList = 1E20066B1ABABDB500A3748E /* Build configuration list for PBXProject "Facade Tester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E2006671ABABDB500A3748E;
+			productRefGroup = 1E2006711ABABDB600A3748E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E20066F1ABABDB600A3748E /* Facade Tester */,
+				1E20068B1ABABDB600A3748E /* Facade TesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E20066E1ABABDB600A3748E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2006871ABABDB600A3748E /* LaunchScreen.xib in Resources */,
+				1E2006841ABABDB600A3748E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E20068A1ABABDB600A3748E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E20069C1ABABDE400A3748E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != Release ]; then\n\necho \"Bumping build number...\"\n\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n\n\n#increment the build number (ie 115 to 116)\n\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\n\nif [[ \"${buildnum}\" == \"\" ]]; then\n\necho \"No build number in $plist\"\n\nexit 2\n\nfi\n\n\n\nbuildnum=$(expr $buildnum + 0001)\n\n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $buildnum\" \"${plist}\"\n\necho \"Bumped build number to $buildnum\"\n\n\n\nelse\n\necho $CONFIGURATION \" build - Not bumping build number.\"\n\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E20066C1ABABDB600A3748E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E20067F1ABABDB600A3748E /* StockViewController.m in Sources */,
+				1E2006791ABABDB600A3748E /* AppDelegate.m in Sources */,
+				1E20067C1ABABDB600A3748E /* WeatherViewController.m in Sources */,
+				1E2006761ABABDB600A3748E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2006881ABABDB600A3748E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2006931ABABDB600A3748E /* Facade_TesterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E20068E1ABABDB600A3748E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E20066F1ABABDB600A3748E /* Facade Tester */;
+			targetProxy = 1E20068D1ABABDB600A3748E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E2006851ABABDB600A3748E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E2006861ABABDB600A3748E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E2006941ABABDB600A3748E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1E2006951ABABDB600A3748E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E2006971ABABDB600A3748E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Facade Tester/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E2006981ABABDB600A3748E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Facade Tester/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E20069A1ABABDB600A3748E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Facade TesterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facade Tester.app/Facade Tester";
+			};
+			name = Debug;
+		};
+		1E20069B1ABABDB600A3748E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Facade TesterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facade Tester.app/Facade Tester";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E20066B1ABABDB500A3748E /* Build configuration list for PBXProject "Facade Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2006941ABABDB600A3748E /* Debug */,
+				1E2006951ABABDB600A3748E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E2006961ABABDB600A3748E /* Build configuration list for PBXNativeTarget "Facade Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2006971ABABDB600A3748E /* Debug */,
+				1E2006981ABABDB600A3748E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E2006991ABABDB600A3748E /* Build configuration list for PBXNativeTarget "Facade TesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E20069A1ABABDB600A3748E /* Debug */,
+				1E20069B1ABABDB600A3748E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E2006681ABABDB500A3748E /* Project object */;
+}

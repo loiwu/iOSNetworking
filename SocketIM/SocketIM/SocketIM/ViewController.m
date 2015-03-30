@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_joinView release];
+    [_inputNameField release];
+    [super dealloc];
+}
+- (IBAction)joinChat:(UIButton *)sender {
+}
 @end

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UITextField *inputNameField;
+@property (retain, nonatomic) IBOutlet UIView *joinView;
+- (IBAction)joinChat:(UIButton *)sender;
 
 @end
 

@@ -4,7 +4,7 @@ from twisted.internet import reactor
 
 class IphoneChat(Protocol):
 	def connectionMade(self):
-		#self.transport.write("""connected""")
+		self.transport.write("""connected""")
 		self.factory.clients.append(self)
 		print "clients are ", self.factory.clients
 	
@@ -12,7 +12,7 @@ class IphoneChat(Protocol):
 	    self.factory.clients.remove(self)
 	
 	def dataReceived(self, data):
-	    #print "data is ", data
+	    print "data is ", data
 		a = data.split(':')
 		if len(a) > 1:
 			command = a[0]
@@ -39,7 +39,7 @@ factory = Factory()
 factory.protocol = IphoneChat
 factory.clients = []
 
-reactor.listenTCP(8080, factory)
+reactor.listenTCP(80, factory)
 print "Iphone Chat server started"
 reactor.run()
 

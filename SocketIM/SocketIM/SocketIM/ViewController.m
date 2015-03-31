@@ -16,7 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (void) launchThreadByNSObject_performSelectorInBackground_withObject
+{
+    [self performSelectorInBackground:@selector(doWork) withObject:nil];
+}
+
+- (void)doWork
+{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    [self performSelectorOnMainThread:@selector(doneWork) withObject:nil waitUntilDone:NO];
+    [pool drain];
+}
+
+- (void)doneWork
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

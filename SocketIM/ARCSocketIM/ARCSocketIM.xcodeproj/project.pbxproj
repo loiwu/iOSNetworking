@@ -14,6 +14,7 @@
 		1EE4A6401ACA77AE009E0C8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4A63F1ACA77AE009E0C8A /* Images.xcassets */; };
 		1EE4A6431ACA77AE009E0C8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4A6411ACA77AE009E0C8A /* LaunchScreen.xib */; };
 		1EE4A64F1ACA77AE009E0C8A /* ARCSocketIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4A64E1ACA77AE009E0C8A /* ARCSocketIMTests.m */; };
+		1EE4A65B1ACA7842009E0C8A /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4A65A1ACA7842009E0C8A /* SomeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1EE4A6481ACA77AE009E0C8A /* ARCSocketIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCSocketIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE4A64D1ACA77AE009E0C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE4A64E1ACA77AE009E0C8A /* ARCSocketIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCSocketIMTests.m; sourceTree = "<group>"; };
+		1EE4A6591ACA7842009E0C8A /* SomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
+		1EE4A65A1ACA7842009E0C8A /* SomeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				1EE4A63F1ACA77AE009E0C8A /* Images.xcassets */,
 				1EE4A6411ACA77AE009E0C8A /* LaunchScreen.xib */,
 				1EE4A6321ACA77AE009E0C8A /* Supporting Files */,
+				1EE4A6591ACA7842009E0C8A /* SomeObject.h */,
+				1EE4A65A1ACA7842009E0C8A /* SomeObject.m */,
 			);
 			path = ARCSocketIM;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			files = (
 				1EE4A63B1ACA77AE009E0C8A /* ViewController.m in Sources */,
 				1EE4A6381ACA77AE009E0C8A /* AppDelegate.m in Sources */,
+				1EE4A65B1ACA7842009E0C8A /* SomeObject.m in Sources */,
 				1EE4A6351ACA77AE009E0C8A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

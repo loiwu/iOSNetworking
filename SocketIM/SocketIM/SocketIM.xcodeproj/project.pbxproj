@@ -14,6 +14,7 @@
 		1EB18CA31AC8E5C500C9187D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB18CA21AC8E5C500C9187D /* Images.xcassets */; };
 		1EB18CA61AC8E5C500C9187D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB18CA41AC8E5C500C9187D /* LaunchScreen.xib */; };
 		1EB18CB21AC8E5C500C9187D /* SocketIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB18CB11AC8E5C500C9187D /* SocketIMTests.m */; };
+		1EE4A6251ACA771C009E0C8A /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4A6241ACA771C009E0C8A /* SomeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1EB18CAB1AC8E5C500C9187D /* SocketIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB18CB01AC8E5C500C9187D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EB18CB11AC8E5C500C9187D /* SocketIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketIMTests.m; sourceTree = "<group>"; };
+		1EE4A6231ACA771C009E0C8A /* SomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
+		1EE4A6241ACA771C009E0C8A /* SomeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				1EB18CA21AC8E5C500C9187D /* Images.xcassets */,
 				1EB18CA41AC8E5C500C9187D /* LaunchScreen.xib */,
 				1EB18C951AC8E5C500C9187D /* Supporting Files */,
+				1EE4A6231ACA771C009E0C8A /* SomeObject.h */,
+				1EE4A6241ACA771C009E0C8A /* SomeObject.m */,
 			);
 			path = SocketIM;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			files = (
 				1EB18C9E1AC8E5C500C9187D /* ViewController.m in Sources */,
 				1EB18C9B1AC8E5C500C9187D /* AppDelegate.m in Sources */,
+				1EE4A6251ACA771C009E0C8A /* SomeObject.m in Sources */,
 				1EB18C981AC8E5C500C9187D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +437,7 @@
 				1EB18CB71AC8E5C500C9187D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EB18CB81AC8E5C500C9187D /* Build configuration list for PBXNativeTarget "SocketIMTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +446,7 @@
 				1EB18CBA1AC8E5C500C9187D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

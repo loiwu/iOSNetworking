@@ -14,26 +14,17 @@
 
 @implementation ViewController
 
+- (void)initNetworkCommunication
+{
+    CFReadStreamRef readStream;
+    CFWriteStreamRef writeStream;
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);
+    inputStream = (NSInputStream *)readStream;
+    outputStream = (NSOutputStream *)writeStream;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-}
-
-- (void) launchThreadByNSObject_performSelectorInBackground_withObject
-{
-    [self performSelectorInBackground:@selector(doWork) withObject:nil];
-}
-
-- (void)doWork
-{
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    
-    [self performSelectorOnMainThread:@selector(doneWork) withObject:nil waitUntilDone:NO];
-    [pool drain];
-}
-
-- (void)doneWork
-{
     
 }
 

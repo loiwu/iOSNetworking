@@ -35,6 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initNetworkCommunication];
+    
 }
 
 - (void)didReceiveMemoryWarning {

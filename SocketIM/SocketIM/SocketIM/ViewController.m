@@ -24,6 +24,10 @@
     
     [inputStream setDelegate:self];
     [outputStream setDelegate:self];
+    
+    [inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+
 }
 
 - (void)viewDidLoad {

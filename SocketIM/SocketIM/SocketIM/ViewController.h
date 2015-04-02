@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<NSStreamDelegate>
+@interface ViewController : UIViewController<NSStreamDelegate, UITableViewDelegate, UITableViewDataSource>
 {
     NSInputStream *inputStream;
     NSOutputStream *outputStream;

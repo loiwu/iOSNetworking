@@ -151,6 +151,9 @@
 - (void)messageReceived:(NSString *)message {
     [messages addObject:message];
     [self.tView reloadData];
+    
+    NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1 inSection:0];
+    [self.tView scrollToRowAtIndexPath:topIndexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 }
 
 @end

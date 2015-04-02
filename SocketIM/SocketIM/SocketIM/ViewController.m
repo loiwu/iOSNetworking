@@ -66,6 +66,7 @@
     NSString *response = [NSString stringWithFormat:@"msg:%@",inputMessageField.text];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
+    inputMessageField.text = @"";
 }
 
 - (IBAction)joinChat:(UIButton *)sender {

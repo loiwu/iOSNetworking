@@ -27,7 +27,9 @@
     
     [inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-
+    
+    [inputStream open];
+    [outputStream open];
 }
 
 - (void)viewDidLoad {

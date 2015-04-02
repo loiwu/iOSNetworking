@@ -100,4 +100,34 @@
     return messages.count;
 }
 
+- (void)stream:(NSStream *)aStream handleEvent:(NSStreamEvent)eventCode {
+//    NSLog(@"stream event %lu", eventCode);
+    switch (eventCode) {
+            
+        case NSStreamEventNone:
+            break;
+            
+        case NSStreamEventOpenCompleted:
+            NSLog(@"Stream opened");
+            break;
+            
+        case NSStreamEventHasBytesAvailable:
+            break;
+            
+        case NSStreamEventHasSpaceAvailable:
+            break;
+            
+        case NSStreamEventErrorOccurred:
+            NSLog(@"Fail to connect to the host");
+            break;
+            
+        case NSStreamEventEndEncountered:
+            NSLog(@"Event end");
+            break;
+            
+        default:
+            break;
+    }
+}
+
 @end

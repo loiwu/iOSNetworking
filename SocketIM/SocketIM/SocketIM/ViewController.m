@@ -112,6 +112,22 @@
             break;
             
         case NSStreamEventHasBytesAvailable:
+            
+            if (aStream == inputStream) {
+                uint8_t buffer[1024];
+                int len;
+                
+                while ([inputStream hasBytesAvailable]) {
+                    len = (int)[inputStream read:buffer maxLength:sizeof(buffer)];
+                    if (len>0) {
+                        NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];
+                        if (nil!=output) {
+                            NSLog(@"server said: %@", output);
+                        }
+                    }
+                }
+            }
+            
             break;
             
         case NSStreamEventHasSpaceAvailable:

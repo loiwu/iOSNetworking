@@ -20,6 +20,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57g-Kv-pa9">
                                 <rect key="frame" x="16" y="20" width="568" height="580"/>
                                 <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-x3-kBF">
+                                        <rect key="frame" x="0.0" y="83" width="504" height="497"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="Hqi-il-YcL"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="R04-Mf-PMc"/>
+                                        </connections>
+                                    </tableView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-aa-Hy0">
                                         <rect key="frame" x="8" y="45" width="468" height="30"/>
                                         <constraints>
@@ -40,14 +48,6 @@
                                             <action selector="sendMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kMe-OF-Ij5"/>
                                         </connections>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-x3-kBF">
-                                        <rect key="frame" x="0.0" y="83" width="504" height="497"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="Hqi-il-YcL"/>
-                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="R04-Mf-PMc"/>
-                                        </connections>
-                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

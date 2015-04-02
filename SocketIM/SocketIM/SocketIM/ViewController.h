@@ -9,11 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController<NSStreamDelegate, UITableViewDelegate, UITableViewDataSource>
-{
-    NSInputStream *inputStream;
-    NSOutputStream *outputStream;
-}
 
+@property (nonatomic, retain) NSInputStream *inputStream;
+@property (nonatomic, retain) NSOutputStream *outputStream;
 @property (retain, nonatomic) IBOutlet UITextField *inputNameField;
 @property (retain, nonatomic) IBOutlet UIView *joinView;
 @property (retain, nonatomic) IBOutlet UITextField *inputMessageField;

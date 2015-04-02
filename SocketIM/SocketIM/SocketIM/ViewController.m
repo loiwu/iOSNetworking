@@ -13,6 +13,10 @@
 @end
 
 @implementation ViewController
+@synthesize joinView, chatView;
+@synthesize inputStream, outputStream;
+@synthesize inputNameField, inputMessageField;
+@synthesize tView;
 
 - (void)initNetworkCommunication
 {
@@ -45,18 +49,20 @@
 }
 
 - (void)dealloc {
-    [_joinView release];
-    [_inputNameField release];
-    [_inputMessageField release];
-    [_tView release];
-    [_chatView release];
+    [joinView release];
+    [inputNameField release];
+    [inputMessageField release];
+    [tView release];
+    [chatView release];
     [super dealloc];
 }
 - (IBAction)sendMessage:(UIButton *)sender {
 }
 
 - (IBAction)joinChat:(UIButton *)sender {
-    NSString *response = [NSString stringWithFormat:@"iam:%@",_inputNameField.text];
+    
+    [self.view sendSubviewToBack:joinView];
+    NSString *response = [NSString stringWithFormat:@"iam:%@",inputNameField.text];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
 }

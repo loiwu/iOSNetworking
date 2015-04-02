@@ -141,6 +141,8 @@
             
         case NSStreamEventEndEncountered:
             NSLog(@"Event end");
+            [aStream close];
+            [aStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
             break;
             
         default:

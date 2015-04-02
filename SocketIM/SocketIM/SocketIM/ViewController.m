@@ -50,5 +50,8 @@
     [super dealloc];
 }
 - (IBAction)joinChat:(UIButton *)sender {
+    NSString *response = [NSString stringWithFormat:@"iam:%@",_inputNameField.text];
+    NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
+    [outputStream write:[data bytes] maxLength:[data length]];
 }
 @end

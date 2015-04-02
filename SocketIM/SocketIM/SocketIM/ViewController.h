@@ -16,6 +16,10 @@
 
 @property (retain, nonatomic) IBOutlet UITextField *inputNameField;
 @property (retain, nonatomic) IBOutlet UIView *joinView;
+@property (retain, nonatomic) IBOutlet UITextField *inputMessageField;
+@property (retain, nonatomic) IBOutlet UITableView *tView;
+@property (retain, nonatomic) IBOutlet UIView *chatView;
+- (IBAction)sendMessage:(UIButton *)sender;
 - (IBAction)joinChat:(UIButton *)sender;
 
 @end

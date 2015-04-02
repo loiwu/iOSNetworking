@@ -47,8 +47,14 @@
 - (void)dealloc {
     [_joinView release];
     [_inputNameField release];
+    [_inputMessageField release];
+    [_tView release];
+    [_chatView release];
     [super dealloc];
 }
+- (IBAction)sendMessage:(UIButton *)sender {
+}
+
 - (IBAction)joinChat:(UIButton *)sender {
     NSString *response = [NSString stringWithFormat:@"iam:%@",_inputNameField.text];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];

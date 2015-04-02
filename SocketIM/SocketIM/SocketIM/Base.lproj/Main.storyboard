@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,6 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57g-Kv-pa9">
+                                <rect key="frame" x="16" y="20" width="568" height="580"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-aa-Hy0">
+                                        <rect key="frame" x="8" y="45" width="468" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FFR-jF-Ele"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZZ-4e-sEf">
+                                        <rect key="frame" x="504" y="44" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="oRg-d3-Qed"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kMe-OF-Ij5"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-x3-kBF">
+                                        <rect key="frame" x="0.0" y="83" width="504" height="497"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="Hqi-il-YcL"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="R04-Mf-PMc"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tZZ-4e-sEf" secondAttribute="trailing" constant="18" id="1cc-Zb-IN3"/>
+                                    <constraint firstItem="qrB-aa-Hy0" firstAttribute="top" secondItem="57g-Kv-pa9" secondAttribute="top" constant="45" id="5bR-sU-R4D"/>
+                                    <constraint firstItem="Jc0-x3-kBF" firstAttribute="top" secondItem="qrB-aa-Hy0" secondAttribute="bottom" constant="8" id="AYM-M3-iGP"/>
+                                    <constraint firstItem="tZZ-4e-sEf" firstAttribute="leading" secondItem="Jc0-x3-kBF" secondAttribute="trailing" id="QbR-SI-zPx"/>
+                                    <constraint firstItem="tZZ-4e-sEf" firstAttribute="top" secondItem="57g-Kv-pa9" secondAttribute="top" constant="44" id="e2F-5J-Ha7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jc0-x3-kBF" secondAttribute="bottom" id="eSC-Hv-UyR"/>
+                                    <constraint firstItem="qrB-aa-Hy0" firstAttribute="leading" secondItem="57g-Kv-pa9" secondAttribute="leading" constant="8" id="rjI-t0-21h"/>
+                                    <constraint firstItem="tZZ-4e-sEf" firstAttribute="leading" secondItem="qrB-aa-Hy0" secondAttribute="trailing" constant="28" id="tWE-Fg-HDx"/>
+                                    <constraint firstItem="Jc0-x3-kBF" firstAttribute="leading" secondItem="57g-Kv-pa9" secondAttribute="leading" id="wNM-pN-Zxp"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gH-Jl-JDM">
                                 <rect key="frame" x="16" y="0.0" width="568" height="600"/>
                                 <subviews>
@@ -49,15 +94,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="57g-Kv-pa9" secondAttribute="bottom" id="2CW-FY-ajS"/>
+                            <constraint firstItem="57g-Kv-pa9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KJ2-MC-CS2"/>
                             <constraint firstItem="2gH-Jl-JDM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="NwQ-33-8kg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57g-Kv-pa9" secondAttribute="trailing" id="OOt-71-YNz"/>
                             <constraint firstAttribute="bottomMargin" secondItem="2gH-Jl-JDM" secondAttribute="bottom" id="PK8-BP-6qr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2gH-Jl-JDM" secondAttribute="trailing" id="Qbd-rC-ysG"/>
+                            <constraint firstItem="57g-Kv-pa9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="VVc-tv-HlR"/>
                             <constraint firstItem="2gH-Jl-JDM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hCz-iZ-GYE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chatView" destination="2gH-Jl-JDM" id="K0M-uW-FMG"/>
+                        <outlet property="inputMessageField" destination="qrB-aa-Hy0" id="0yY-1z-u0T"/>
                         <outlet property="inputNameField" destination="nE5-DT-BbE" id="Bqd-E2-81n"/>
                         <outlet property="joinView" destination="2gH-Jl-JDM" id="HcO-oV-zME"/>
+                        <outlet property="tView" destination="Jc0-x3-kBF" id="S5f-OH-Snh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

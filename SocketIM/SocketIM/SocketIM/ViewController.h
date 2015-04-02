@@ -17,6 +17,8 @@
 @property (retain, nonatomic) IBOutlet UITextField *inputMessageField;
 @property (retain, nonatomic) IBOutlet UITableView *tView;
 @property (retain, nonatomic) IBOutlet UIView *chatView;
+@property (retain, nonatomic) NSMutableArray *messages;
+
 - (IBAction)sendMessage:(UIButton *)sender;
 - (IBAction)joinChat:(UIButton *)sender;
 

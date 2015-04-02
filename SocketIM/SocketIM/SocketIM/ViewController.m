@@ -16,13 +16,13 @@
 @synthesize joinView, chatView;
 @synthesize inputStream, outputStream;
 @synthesize inputNameField, inputMessageField;
-@synthesize tView;
+@synthesize tView, messages;
 
 - (void)initNetworkCommunication
 {
     CFReadStreamRef readStream;
     CFWriteStreamRef writeStream;
-    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);//192.168.1.104
     inputStream = (NSInputStream *)readStream;
     outputStream = (NSOutputStream *)writeStream;
     
@@ -41,6 +41,8 @@
     
     [self initNetworkCommunication];
     
+    messages = [[NSMutableArray alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +56,9 @@
     [inputMessageField release];
     [tView release];
     [chatView release];
+    [inputStream release];
+    [outputStream release];
+    [messages release];
     [super dealloc];
 }
 - (IBAction)sendMessage:(UIButton *)sender {
@@ -81,6 +86,9 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier]autorelease];
     }
     
+    NSString *s = (NSString *)[messages objectAtIndex:indexPath.row];
+    cell.textLabel.text = s;
+    
     return cell;
 }
 
@@ -89,7 +97,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return messages.count;
 }
 
 @end

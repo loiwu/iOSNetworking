@@ -123,6 +123,7 @@
                         NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];
                         if (nil!=output) {
                             NSLog(@"server said: %@", output);
+                            [self messageReceived:output];
                         }
                     }
                 }
@@ -144,6 +145,11 @@
         default:
             break;
     }
+}
+
+- (void)messageReceived:(NSString *)message {
+    [messages addObject:message];
+    [self.tView reloadData];
 }
 
 @end

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75516582-0709-4DC8-A931-37D3C26A3B14</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HttpIOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BCF51171F118738F715104FB99DBC56FE48A16BA</key>
+		<string>https://bitbucket.org/Loi/ibaen.git</string>
+		<key>D317462FE2C13C0599C29ED09F4666FA1AB05026</key>
+		<string>https://github.com/loiwu/iOSNetworking.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HttpIOS/HttpIOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BCF51171F118738F715104FB99DBC56FE48A16BA</key>
+		<string>../../../..</string>
+		<key>D317462FE2C13C0599C29ED09F4666FA1AB05026</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/iOSNetworking.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D317462FE2C13C0599C29ED09F4666FA1AB05026</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCF51171F118738F715104FB99DBC56FE48A16BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D317462FE2C13C0599C29ED09F4666FA1AB05026</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSNetworking</string>
+		</dict>
+	</array>
+</dict>
+</plist>
